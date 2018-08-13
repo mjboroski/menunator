@@ -10,7 +10,7 @@ export default function manageOrder(state = {
       return { ...state, items: [ ...state.items, item] }
 
     case 'DELETE_ITEM':
-      const restaurants = state.items.filter(item => item.id !== action.id);
+      const items = state.items.filter(item => item.id !== action.id);
       return { ...state, items}
 
     default:
