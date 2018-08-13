@@ -18,4 +18,15 @@ class App extends Component {
   }
 }
 
+// return (
+//   <Router>
+//     <div>
+//       <NavBar />
+//       <Route exact path="/" render={() => <div>Home</div>} />
+//       <Route path='/movies' component={MoviesPage}/>
+//     </div>
+//   </Router>
+// );
+// }
+// }
 export default App;
