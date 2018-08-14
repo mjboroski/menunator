@@ -10,7 +10,12 @@ const NavBar = props => {
       >
       Home
     </NavLink>
-  
+    <NavLink
+      style={{ marginRight: '10px' }}
+      to="/menu"
+    >
+    Menu
+  </NavLink>
   </div>
 );
 }

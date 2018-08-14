@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 import NavBar from '../components/NavBar';
+import ItemsContainer from './containers/ItemsContainer';
+
 
 class App extends Component {
   render() {
@@ -11,9 +13,7 @@ class App extends Component {
         <div>
           <NavBar />
           <Route exact path="/" render={() => <div>Home</div>} />
-          <Route path='/item' component={item}/>
-          <Route path='/menu' component={menu}/>
-          <Route path='/order' component={order}/>
+          <Route path='/menu' component={ItemsContainer}/>
         </div>
       </Router>
     );
