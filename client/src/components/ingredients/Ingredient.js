@@ -1,7 +1,23 @@
 import React, { Component } from 'react';
-import ReviewsContainer from '../../containers/ReviewsContainer'
 
-class Menu extends Component {
+class Ingredient extends Component {
 
 
-export default Menu;
+  handleOnClick = () => {
+    this.props.deleteIngredient(this.props.review.id)
+  }
+
+  render() {
+    return (
+      <div>
+        <li>
+          {this.props.review.text}
+        </li>
+        <button onClick={this.handleOnClick}> x </button>
+      </div>
+    );
+  }
+
+};
+
+export default Ingredient;
