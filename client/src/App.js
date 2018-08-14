@@ -11,6 +11,7 @@ class App extends Component {
         <div>
           <NavBar />
           <Route exact path="/" render={() => <div>Home</div>} />
+          <Route path='/item' component={item}/>
           <Route path='/menu' component={menu}/>
           <Route path='/order' component={order}/>
         </div>
