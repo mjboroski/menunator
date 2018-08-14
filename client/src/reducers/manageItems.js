@@ -16,7 +16,7 @@ export default function manageItems(state = {
       return { ...state, items}
 
     case 'ADD_INGREDIENT':
-      const review = { text: action.ingredient.text, itemId: action.ingredient.itemId, id: cuidFn() };
+      const ingredient = { text: action.ingredient.text, itemId: action.ingredient.itemId, id: cuidFn() };
       return { ...state,
         ingredients: [...state.ingredients, ingredient]
       }

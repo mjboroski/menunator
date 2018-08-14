@@ -17,6 +17,7 @@ class ItemInput extends Component {
     return (
       <div>
         <form onSubmit={(event) => this.handleOnSubmit(event)} >
+        <label>Add Item</label>
           <input
             type="text"
             value={this.state.text}

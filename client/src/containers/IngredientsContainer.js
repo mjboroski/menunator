@@ -20,11 +20,11 @@ class IngredientsContainer extends Component {
     );
   }
 }
-const mapStateToProps = ({reviews}) => {
+const mapStateToProps = ({ingredients}) => {
   return {ingredients}
 }
 const mapDispatchToProps = dispatch => ({
-  addIngredient: review => dispatch({type: 'ADD_INGREDIENT', ingredient}),
+  addIngredient: ingredient => dispatch({type: 'ADD_INGREDIENT', ingredient}),
   deleteIngredient: id => dispatch({type: 'DELETE_INGREDIENT', id})
 })
 

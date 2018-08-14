@@ -8,7 +8,7 @@ class IngredientInput extends Component {
 
   handleOnSubmit = event => {
     event.preventDefault();
-    this.props.addReview({text: this.state.text, itemId: this.props.itemId });
+    this.props.addIngredient({text: this.state.text, itemId: this.props.itemId });
     this.setState({text: '',});}
 
   render() {

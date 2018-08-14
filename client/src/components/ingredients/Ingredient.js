@@ -4,16 +4,16 @@ class Ingredient extends Component {
 
 
   handleOnClick = () => {
-    this.props.deleteIngredient(this.props.review.id)
+    this.props.deleteIngredient(this.props.ingredient.id)
   }
 
   render() {
     return (
       <div>
         <li>
-          {this.props.review.text}
+          {this.props.ingredient.text}
+          <button onClick={this.handleOnClick}> x </button>
         </li>
-        <button onClick={this.handleOnClick}> x </button>
       </div>
     );
   }
