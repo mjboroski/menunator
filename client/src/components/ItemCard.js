@@ -39,7 +39,7 @@ const ItemCard = ({item, deleteItem, updateItem}) => {
           </div>
         </Card.Description>
       </Card>
-      <Divider horizontal><i className="heart icon"></i></Divider>
+      <Divider horizontal><i className="diamond icon"></i></Divider>
       <Link to="/items/new" className="ui primary button center aligned">
         Add a Menu Item
       </Link>

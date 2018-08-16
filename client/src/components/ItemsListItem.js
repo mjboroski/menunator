@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
-import { List, Icon } from 'semantic-ui-react';
+import { List } from 'semantic-ui-react';
 
 class ItemsListItem extends Component {
   constructor(props) {

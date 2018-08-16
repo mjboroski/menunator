@@ -2,7 +2,7 @@ import React from 'react';
 import { reduxForm } from 'redux-form';
 import { connect } from 'react-redux';
 import history from '../history';
-import { bindActionCreators } from "redux";
+// import { bindActionCreators } from "redux";
 import ItemForm from '../components/ItemForm';
 import { createItem } from '../actions/actions';
 

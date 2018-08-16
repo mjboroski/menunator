@@ -10,12 +10,11 @@ class ItemsList extends Component {
 
   render(){
     const { items } = this.props
-    const { item } = this.props
     return (
       <div>
         <List className="center">
           {items.map(item =>
-            <ItemsListItem item = {item}/>
+            <ItemsListItem item={item}/>
           )}
         </List>
       </div>

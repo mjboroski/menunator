@@ -49,7 +49,7 @@ function validate(values){
 
 const mapStateToProps = ( state, ownProps ) => {
   const item = state.items.find(item =>
-    item.id == ownProps.match.params.id)
+    item.id === ownProps.match.params.id)
   return {
     initialValues: {
       name: item.name,

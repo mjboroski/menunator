@@ -4,7 +4,6 @@ import { createStore, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 import { Provider } from "react-redux";
 import { Router, Route, Switch, Redirect } from 'react-router-dom';
-import App from './containers/App';
 import rootReducer from './reducers'
 import ItemsContainer from './containers/ItemsContainer';
 import './index.css';
