@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 import { List } from 'semantic-ui-react';
-
 import ItemsListItem from './ItemsListItem';
 
 class ItemsList extends Component {
@@ -11,17 +10,17 @@ class ItemsList extends Component {
 
   render(){
     const { items } = this.props
+    const { item } = this.props
     return (
       <div>
         <List className="center">
           {items.map(item =>
-            <ItemsListItem item={item}/>
+            <ItemsListItem item = {item}/>
           )}
         </List>
       </div>
     )
   }
 }
-
 
 export default ItemsList;
