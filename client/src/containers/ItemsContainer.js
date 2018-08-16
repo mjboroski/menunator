@@ -4,6 +4,12 @@ import Items from '../components/items/Items'
 import { connect } from 'react-redux'
 
 class ItemsContainer extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+    }
+  }
+
   render() {
     return (
       <div>
