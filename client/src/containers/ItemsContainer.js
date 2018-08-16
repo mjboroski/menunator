@@ -22,9 +22,6 @@ class itemsContainer extends Component {
   }
 }
 const mapStateToProps = state => ({ items: state.items })
-// const mapDispatchToProps = dispatch => ({
-//   addItem: text => dispatch({type: 'ADD_ITEM', text}),
-//   deleteItem: id => dispatch({type: 'DELETE_ITEM', id})
-// })
+
 
 export default connect(mapStateToProps, mapDispatchToProps)(itemsContainer)
