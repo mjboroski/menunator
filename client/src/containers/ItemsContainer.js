@@ -15,6 +15,7 @@ class ItemsContainer extends Component {
   }
 
   render() {
+    const { match, items } = this.props
     return (
       <div>
         <Grid celled>
