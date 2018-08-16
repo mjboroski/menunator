@@ -6,7 +6,7 @@ import { Provider } from "react-redux";
 import { Router, Route, Switch, Redirect } from 'react-router-dom';
 import App from './containers/App';
 import rootReducer from './reducers'
-import itemsContainer from './containers/itemsContainer';
+import ItemsContainer from './containers/ItemsContainer';
 import './index.css';
 import './semantic-ui/semantic.min.css';
 import history from './history';
@@ -20,7 +20,7 @@ ReactDOM.render(
   <Provider store={store}>
     <Router history={history}>
       <Switch>
-        <Route path="/items" component={itemsContainer} />
+        <Route path="/items" component={ItemsContainer} />
         <Route path="/" render={() => (
           <Redirect to="/items"/>
         )}/>

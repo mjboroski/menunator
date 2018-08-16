@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import itemsContainer from './itemsContainer';
+import ItemsContainer from './ItemsContainer';
 
 import '../App.css';
 
@@ -8,7 +8,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <itemsContainer />
+        <ItemsContainer />
       </div>
     );
   }

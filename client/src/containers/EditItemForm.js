@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import history from '../history';
 
 import ItemForm from '../components/ItemForm';
-import { updateItem } from '../actions/itemActions';
+import { updateItem } from '../actions/actions';
 
 let EditItemForm = ({ item, values, handleSubmit, pristine, reset, submitting }) => {
 
