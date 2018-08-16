@@ -3,7 +3,7 @@ import ItemInput from '../components/items/ItemInput'
 import Items from '../components/items/Items'
 import { connect } from 'react-redux'
 
-class ItemsContainer extends Component {
+class itemsContainer extends Component {
   constructor(props){
     super(props);
     this.state = {
@@ -28,4 +28,4 @@ const mapDispatchToProps = dispatch => ({
   deleteItem: id => dispatch({type: 'DELETE_ITEM', id})
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(ItemsContainer)
+export default connect(mapStateToProps, mapDispatchToProps)(itemsContainer)
