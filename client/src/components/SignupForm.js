@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Container, Form, Input, Button } from 'semantic-ui-react'
+import { Form, Button } from 'semantic-ui-react'
 
  class SignupForm extends Component {
   render(){
