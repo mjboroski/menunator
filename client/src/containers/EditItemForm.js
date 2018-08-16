@@ -2,7 +2,6 @@ import React from 'react';
 import { reduxForm } from 'redux-form';
 import { connect } from 'react-redux';
 import history from '../history';
-
 import ItemForm from '../components/ItemForm';
 import { updateItem } from '../actions/actions';
 
@@ -36,7 +35,7 @@ function validate(values){
   const errors = {}
 
   if (!values.name) {
-    errors.name = "New Item Name:";
+    errors.name = "Item Name:";
   }
 
   if (!values.category) {
@@ -49,7 +48,7 @@ function validate(values){
 
 const mapStateToProps = ( state, ownProps ) => {
   const item = state.items.find(item =>
-    item.id === ownProps.match.params.id)
+    item.id == ownProps.match.params.id)
   return {
     initialValues: {
       name: item.name,

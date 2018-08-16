@@ -19,7 +19,7 @@ const ItemCard = ({item, deleteItem, updateItem}) => {
         </Card.Meta>
         <Card.Description textAlign="center">
           <List>
-            ingredients
+            Ingredients:
             {item.ingredients.map( ingredient =>
               <List.Item key={ingredient.id}>{ingredient.name}</List.Item>
             )}
@@ -39,7 +39,7 @@ const ItemCard = ({item, deleteItem, updateItem}) => {
           </div>
         </Card.Description>
       </Card>
-      <Divider horizontal><i className="diamond icon"></i></Divider>
+      <Divider horizontal><i className="circle icon"></i></Divider>
       <Link to="/items/new" className="ui primary button center aligned">
         Add a Menu Item
       </Link>
