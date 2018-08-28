@@ -35,5 +35,9 @@ module Menunator
     config.middleware.use ActionDispatch::Flash
     config.middleware.use Rack::MethodOverride
     config.middleware.use ActionDispatch::Cookies
+    config.action_dispatch.default_headers = {
+        'Access-Control-Allow-Origin' => 'http://localhost:3000',
+        'Access-Control-Request-Method' => %w{GET POST OPTIONS}.join(",")
+      }
   end
 end

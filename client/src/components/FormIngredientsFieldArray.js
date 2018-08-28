@@ -53,14 +53,6 @@ const FormIngredientsFieldArray = ({ fields }) => (
               options={ingredients}
             />
           </Grid.Column>
-          <Grid.Column>
-            <Field
-              name={`${ingredient}.removable`}
-              component="input"
-              type="checkbox"
-            />
-            <label> Removable?</label>
-          </Grid.Column>
         </Grid>
       </List.Item>
     ))}

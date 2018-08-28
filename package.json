@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "history": "^4.7.2",
+    "redux-form": "^7.4.2",
+    "whatwg-fetch": "^2.0.4"
+  }
+}

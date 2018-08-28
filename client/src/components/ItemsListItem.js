@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import { List } from 'semantic-ui-react';
 
 class ItemsListItem extends Component {
-  constructor(props) {
-    super(props)
-  }
+  // constructor(props) {
+  //   super(props)
+  // }
 
   render(){
     const { item } = this.props

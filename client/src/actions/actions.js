@@ -64,7 +64,9 @@ export const createItem = item => {
     return fetch(`${API_URL}/items`, {
       method: "POST",
       headers: {
-        "Content-Type": "application/json"
+        // "Content-Type": "application/json",
+        // 'Accept': 'application/json',
+        // 'Access-Control-Allow-Origin': "http://localhost:3000",
       },
       body: JSON.stringify(item)
     })
