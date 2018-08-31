@@ -15,7 +15,7 @@ class ItemsController < ApplicationController
 
   # POST /items
   def create
-    @item = Item.new(item_params)
+    @item = Item.new(new_item_params)
 
     if @item.save
       render json: @item, status: :created, location: @item
@@ -48,4 +48,9 @@ class ItemsController < ApplicationController
     def item_params
       params.require(:item).permit(:name, :category, ingredients_attributes: [:id, :name, :_destroy])
     end
+
+    def new_item_params
+      params.permit(:item, :name, :category, ingredients_attributes: [:id, :name, :_destroy])
+    end
+
 end

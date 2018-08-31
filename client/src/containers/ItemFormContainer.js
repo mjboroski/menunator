@@ -32,7 +32,7 @@ function validate(values){
   const errors = {}
 
   if (!values.name) {
-    errors.name = "Please enter a name for the itemId.";
+    errors.name = "Please enter a name for the item.";
   }
 
   if (!values.category) {

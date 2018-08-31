@@ -9,8 +9,8 @@ class ItemsList extends Component {
     return (
       <div>
         <List className="center">
-          {items.map(item =>
-            <ItemsListItem item={item}/>
+          {items.map((item, i) =>
+            <ItemsListItem item={item} key={i}/>
           )}
         </List>
       </div>

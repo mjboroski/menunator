@@ -1,4 +1,4 @@
-AdminUser.create!(email: 'admin2@example.com', password: 'password', password_confirmation: 'password')
+AdminUser.create!(email: 'admin3@example.com', password: 'password', password_confirmation: 'password')
 
 item = Item.create(
   name: "Hamburger",

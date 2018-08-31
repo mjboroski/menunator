@@ -10,6 +10,14 @@ const ItemCard = ({item, deleteItem, updateItem}) => {
     history.push('/items');
   }
 
+  const renderIngredients = (ingredients) => {
+    if(!ingredients) return null
+
+    return ingredients.map( ingredient =>
+      <List.Item key={ingredient.id}>{ingredient.name}</List.Item>
+    )
+  }
+
   return (
     <div>
       <Card centered >
@@ -20,9 +28,7 @@ const ItemCard = ({item, deleteItem, updateItem}) => {
         <Card.Description textAlign="center">
           <List>
             Ingredients:
-            {item.ingredients.map( ingredient =>
-              <List.Item key={ingredient.id}>{ingredient.name}</List.Item>
-            )}
+            { renderIngredients(item.ingredients) }
           </List>
 
           <div>
