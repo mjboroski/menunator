@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from "redux";
 import * as actions from "../actions/actions";
 import ItemCard from '../components/ItemCard';
+// debugger
 
 export const ItemContainer = ({ item, actions }) => {
 
@@ -20,7 +21,8 @@ export const ItemContainer = ({ item, actions }) => {
 
 const mapStateToProps = ( state, ownProps ) => {
   const item = state.items.find(item =>
-      item.id === ownProps.match.params.itemId)
+// eslint-disable-next-line
+      item.id == ownProps.match.params.itemId)
 
   if (item) {
     return { item }

@@ -1,3 +1,4 @@
+
 const API_URL = process.env.REACT_APP_API_URL;
 
 export const GET_ITEMS = "GET_ITEMS"
@@ -60,14 +61,14 @@ export const getItem = id => {
 }
 
 export const createItem = item => {
+  debugger
   return dispatch => {
     return fetch(`${API_URL}/items`, {
       method: "POST",
-      // headers: {
-      //   // "Content-Type": "application/json",
-      //   // 'Accept': 'application/json',
-      //   // 'Access-Control-Allow-Origin': "http://localhost:3000",
-      // },
+      headers: {
+       'Accept': 'application/json',
+       'Content-Type': 'application/json'
+      },
       body: JSON.stringify(item)
     })
     .then(response => response.json())

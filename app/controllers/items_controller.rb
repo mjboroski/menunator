@@ -50,7 +50,7 @@ class ItemsController < ApplicationController
     end
 
     def new_item_params
-      params.permit(:item, :name, :category, ingredients_attributes: [:id, :name, :_destroy])
+      params.require(:item).permit(:name, :category, ingredients_attributes: [:id, :name, :_destroy])
     end
 
 end
