@@ -1,5 +1,38 @@
 AdminUser.create!(email: 'admin3@example.com', password: 'password', password_confirmation: 'password')
 
+# ingredient_list= [
+#   "Bun",
+#   "Beef Patty",
+#   "Lettuce",
+#   "Tomato",
+#   "Onion",
+#   "Cheese",
+#   "Frankfurter",
+#   "Chicken",
+#   "Breading",
+#   "Bread",
+#   "Bacon",
+#   "Potatoes",
+#   "Cucumber",
+#   "Nachos",
+#   "Macaroni",
+#   "Noodles",
+#   "Broth",
+#   "Broccoli",
+#   "Flour",
+#   "Carrots",
+#   "Clams",
+#   "Cream",
+#   "Peppers",
+#   "Beans",
+#   "Garlic",
+#   "Hot Sauce"
+# ]
+#
+# ingredient_list.each do |name|
+#   Ingredient.create(name: name)
+# end
+
 item = Item.create(
   name: "Hamburger",
   category: "Entrees"

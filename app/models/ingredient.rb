@@ -1,4 +1,6 @@
 class Ingredient < ApplicationRecord
-  attr_accessor :name
   belongs_to :item
+  validates_presence_of :item
+  validates :name, presence: true
+
 end

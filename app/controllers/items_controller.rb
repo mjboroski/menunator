@@ -4,7 +4,6 @@ class ItemsController < ApplicationController
   # GET /items
   def index
     @items = Item.all
-
     render json: @items, :include => [ :ingredients ]
   end
 
@@ -16,7 +15,7 @@ class ItemsController < ApplicationController
   # POST /items
   def create
     @item = Item.new(new_item_params)
-
+    # debugger
     if @item.save
       render json: @item, status: :created, location: @item
     else
@@ -45,11 +44,12 @@ class ItemsController < ApplicationController
     end
 
     # Only allow a trusted parameter "white list" through.
-    def item_params
+    def new_item_params
+      params[:item][:ingredients_attributes] = params[:ingredients_attributes]
       params.require(:item).permit(:name, :category, ingredients_attributes: [:id, :name, :_destroy])
     end
 
-    def new_item_params
+    def item_params
       params.require(:item).permit(:name, :category, ingredients_attributes: [:id, :name, :_destroy])
     end
 

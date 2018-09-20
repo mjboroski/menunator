@@ -61,7 +61,7 @@ export const getItem = id => {
 }
 
 export const createItem = item => {
-  debugger
+  // debugger
   return dispatch => {
     return fetch(`${API_URL}/items`, {
       method: "POST",
