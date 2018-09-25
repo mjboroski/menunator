@@ -3,6 +3,9 @@ import { List } from 'semantic-ui-react';
 import ItemsListItem from './ItemsListItem';
 
 class ItemsList extends Component {
+  constructor(props) {
+    super(props)
+  }
 
   render(){
     const { items } = this.props

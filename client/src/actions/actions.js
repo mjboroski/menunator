@@ -61,7 +61,7 @@ export const getItem = id => {
 }
 
 export const createItem = item => {
-  // debugger
+  console.log('C')
   return dispatch => {
     return fetch(`${API_URL}/items`, {
       method: "POST",
@@ -73,10 +73,12 @@ export const createItem = item => {
     })
     .then(response => response.json())
     .then(item => {
+      console.log('D')
       dispatch(addItem(item));
     })
     .catch(error => console.log(error));
   }
+  console.log('E')
 }
 
 export const updateItem = (item, id) => {

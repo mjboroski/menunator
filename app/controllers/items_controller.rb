@@ -15,7 +15,6 @@ class ItemsController < ApplicationController
   # POST /items
   def create
     @item = Item.new(new_item_params)
-    # debugger
     if @item.save
       render json: @item, status: :created, location: @item
     else

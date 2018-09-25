@@ -1,10 +1,8 @@
 import React from 'react'
 import { connect } from 'react-redux';
-// import { Link } from 'react-router-dom';
 import { bindActionCreators } from "redux";
 import * as actions from "../actions/actions";
 import ItemCard from '../components/ItemCard';
-// debugger
 
 export const ItemContainer = ({ item, actions }) => {
 
