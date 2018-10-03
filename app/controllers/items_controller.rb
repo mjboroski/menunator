@@ -49,7 +49,7 @@ class ItemsController < ApplicationController
     end
 
     def item_params
-      params.require(:item).permit(:name, :category, ingredients_attributes: [:id, :name, :_destroy])
+      params.require(:item).permit(:name, :category, :likes, ingredients_attributes: [:id, :name, :_destroy])
     end
 
 end

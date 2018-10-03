@@ -37,7 +37,7 @@ module Menunator
     config.middleware.use ActionDispatch::Cookies
     config.action_dispatch.default_headers = {
         'Access-Control-Allow-Origin' => 'http://localhost:3000',
-        'Access-Control-Request-Method' => %w{GET POST OPTIONS}.join(",")
+        'Access-Control-Request-Method' => %w{GET POST PUT OPTIONS}.join(",")
       }
   end
 end
